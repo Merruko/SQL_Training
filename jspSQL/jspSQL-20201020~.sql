@@ -1,9 +1,9 @@
--- 잡다 테이블 삭제
-DROP TABLE DEPT;
+-- 테이블 삭제
+DROP TABLE member;
 
 -- 테이블 추가
 CREATE TABLE t_employee (
-    companyId   number(4) PRIMARY KEY,
+    companyId     number(4) PRIMARY KEY,
     passwd        VARCHAR(20),
     name          VARCHAR2(20)
 );
