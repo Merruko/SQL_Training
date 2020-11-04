@@ -30,4 +30,4 @@ SET NAME = '장그래'
 WHERE COMPANYID = 1001;
 
 -- 모든 자료 삭제
-DELETE FROM t_employee;d
+DELETE FROM t_employee;
