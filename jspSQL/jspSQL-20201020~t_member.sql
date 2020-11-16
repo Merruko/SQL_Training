@@ -3,18 +3,18 @@ DROP TABLE t_employee;
 
 -- 테이블 생성
 CREATE TABLE t_member (
-    memberId      NUMBER(4) PRIMARY KEY,
-    passwd        VARCHAR2(20),
-    name          VARCHAR2(20),
+    memberId      VARCHAR2(10) PRIMARY KEY,
+    passwd        VARCHAR2(20) NOT NULL,
+    name          VARCHAR2(20) NOT NULL,
     gender        VARCHAR2(4),
-    joinDate      DATE
+    joinDate      DATE DEFAULT SYSDATE
 );
 
 -- 테이블 속성 보기
 DESC t_member;
 
 -- 데이터 추가
-INSERT INTO t_member VALUES (9427, '0319', '김대호', '남', SYSDATE);
+INSERT INTO t_member VALUES ('kdh9427', '03190216', '김대호', '남', SYSDATE);
 
 -- 테이블 조회
 SELECT * FROM t_member;
