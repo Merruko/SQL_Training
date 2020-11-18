@@ -29,6 +29,9 @@ ALTER TABLE t_member ADD (gender VARCHAR2(4));
 -- 컬럼 속성 변경
 ALTER TABLE t_member MODIFY gender VARCHAR2(4);
 
+-- 컬럼 이름 변경
+ALTER TABLE t_member CHANGE COLUMN passwd pwd VARCHAR(12);
+
 -- 컬럼 삭제
 ALTER TABLE t_member DROP COLUMN joinDate;
 
