@@ -1,4 +1,4 @@
-CREATE TABLE s_member (
+CREATE TABLE k_member (
     mId VARCHAR(20) PRIMARY KEY,
     mPwd VARCHAR(20),
     mName VARCHAR(10),
@@ -8,7 +8,7 @@ CREATE TABLE s_member (
     mPhone VARCHAR(20)
 );
 
-CREATE TABLE s_board (
+CREATE TABLE k_board (
     seq NUMBER(5) PRIMARY KEY,
     title VARCHAR2(200),
     writer VARCHAR2(20),
@@ -17,14 +17,10 @@ CREATE TABLE s_board (
     cnt NUMBER(5) DEFAULT 0
 );
 
-INSERT INTO s_member VALUES ('kdh9427','0319','관리자','Admin','19930329','mrkim9427@naver.com','01095059427');
-INSERT INTO s_board (seq,title,writer,content) VALUES (1,'임시 공지사항','관리자','이래라저래라');
+INSERT INTO k_member VALUES ('kdh9427','0319','관리자','Admin','19930329','mrkim9427@naver.com','01095059427');
+INSERT INTO k_board (seq,title,writer,content) VALUES (1,'임시 공지사항','관리자','이래라저래라');
 
-SELECT * FROM s_member;
-SELECT * FROM s_board;
-
-CREATE SEQUENCE mem_seq
-START WITH 1
-INCREMENT BY 1;
+SELECT * FROM k_member;
+SELECT * FROM k_board;
 
 commit;
